@@ -91,25 +91,25 @@ $lettiera->set_weight(2, ' kg');
         <div class="container">
             <div class="row row-cols-3">
 
-                <?php foreach ($variable as $key => $value) {
+                <?php foreach ($variable as $key => $value) :
                     # code...
-                }  ?>
+                ?>
 
-                <div class="card col" style="width: 18rem;">
-                    <img src="<?php ?>" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title"><?php ?></h5>
-                        <p class="card-text"><?php ?></p>
+                    <div class="card col" style="width: 18rem;">
+                        <img src="<?php ?>" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title"><?php ?></h5>
+                            <p class="card-text"><?php ?></p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item"><?php ?></li>
+                            <li class="list-group-item"><?php ?></li>
+                            <li class="list-group-item"><?php ?></li>
+                        </ul>
+
                     </div>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item"><?php ?></li>
-                        <li class="list-group-item"><?php ?></li>
-                        <li class="list-group-item"><?php ?></li>
-                    </ul>
 
-                </div>
-
-                <?php ?>
+                <?php endforeach ?>
 
             </div>
         </div>
