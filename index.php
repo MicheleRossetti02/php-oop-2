@@ -17,7 +17,11 @@ require __DIR__ . '/Models/User.php';
 
 
 
-$dogFood = new Item('Food for Dog');
+$dogFood = new Cani('Monge', 'image_link', 19.99, 'icon_link', 'Food');
 $dogFood->set_weight(10, 'kg');
 
 var_dump($dogFood);
+
+$lettiera = new Gatti('Lettiera', 'image_link', 9.99, 'icon_link', 'Lettiera');
+$lettiera->set_weight(2, ' kg');
+var_dump($lettiera);
