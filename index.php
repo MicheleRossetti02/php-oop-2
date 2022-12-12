@@ -32,7 +32,7 @@ $lettiera->set_weight(2, ' kg');
 // var_dump($lettiera);
 
 $michele = new User('Michele', 'Rossetti', 'michelerossetti@gmail.com');
-// var_dump($michele)
+var_dump($michele);
 
 ?>
 
