@@ -20,17 +20,19 @@ require __DIR__ . '/Models/User.php';
 
 
 
-$dogFood = new Cani('Monge', 'image_link', 19.99, 'icon_link', 'Food');
+$dogFood = new Cani('Monge', 'https://arcaplanet.vtexassets.com/arquivos/ids/255544/monge-adult-medium-pollo-12kg-600x600.jpg?v=1757262270', 19.99, 'icon_link', 'Food');
 $dogFood->set_weight(10, ' kg');
 
 
-$lettiera = new Gatti('Lettiera', 'image_link', 9.99, 'icon_link', 'Lettiera');
+$lettiera = new Gatti('Lettiera', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbvs8m8Gn0KRH2j2LyRmwk4UED6VJM86HsYw&usqp=CAU', 9.99, 'icon_link', 'Lettiera');
 $lettiera->set_weight(2, ' kg');
 
 // var_dump($dogFood);
 
 // var_dump($lettiera);
 
+$michele = new User('Michele', 'Rossetti', 'michelerossetti@gmail.com');
+// var_dump($michele)
 
 ?>
 
@@ -91,9 +93,7 @@ $lettiera->set_weight(2, ' kg');
         <div class="container">
             <div class="row row-cols-3">
 
-                <?php foreach ($variable as $key => $value) :
-                    # code...
-                ?>
+                <?php foreach ($variable as $key => $value) : ?>
 
                     <div class="card col" style="width: 18rem;">
                         <img src="<?php ?>" class="card-img-top" alt="...">
