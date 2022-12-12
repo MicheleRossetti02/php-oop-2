@@ -1,6 +1,6 @@
 <?php
 
 
-class Gatti extends shop
+class Gatti extends Item
 {
 }

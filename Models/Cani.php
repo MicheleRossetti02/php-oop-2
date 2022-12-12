@@ -1,6 +1,6 @@
 <?php
 
 
-class Cani extends shop
+class Cani extends Item
 {
 }

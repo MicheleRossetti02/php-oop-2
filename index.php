@@ -11,3 +11,13 @@ Confermate lettura come al solito e buon lavoro! :baby-yoda: (modificato)  -->
 <?php
 
 require __DIR__ . '/Models/Item.php';
+require __DIR__ . '/Models/Cani.php';
+require __DIR__ . '/Models/Gatti.php';
+require __DIR__ . '/Models/User.php';
+
+
+
+$dogFood = new Item('Food for Dog');
+$dogFood->set_weight(10, 'kg');
+
+var_dump($dogFood);
